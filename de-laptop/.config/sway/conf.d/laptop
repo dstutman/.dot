@@ -1,0 +1,14 @@
+input 1739:52550:SYNA307B:00_06CB:CD46_Touchpad {
+        tap enabled
+        tap_button_map lrm
+}
+
+output eDP-1 pos 0 0 res 1920x1080
+
+bar {
+    output eDP-1
+}
+
+bindsym XF86AudioMicMute exec amixer -q -D pulse set Capture toggle
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%

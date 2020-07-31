@@ -168,18 +168,6 @@ for_window [app_id="firefox"] inhibit_idle fullscreen
     # Move focus to the parent container
     bindsym $mod+a focus parent
 #
-# Scratchpad:
-#
-    # Sway has a "scratchpad", which is a bag of holding for windows.
-    # You can send windows there and get them back later.
-
-    # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
-
-    # Show the next scratchpad window or hide the focused scratchpad window.
-    # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
-#
 # Resizing containers:
 #
 mode "resize" {
@@ -210,23 +198,6 @@ bindsym XF86AudioRaiseVolume exec amixer -q -D pulse set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -q -D pulse set Master 5%-
 bindsym XF86AudioMute exec amixer -q -D pulse set Master toggle
 
-#
-# Status Bar:
-#
-# Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command i3status-rs ~/.config/i3status-rust/config
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
 
 exec --no-startup-id mako --default-timeout 7000
 

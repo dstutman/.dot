@@ -1,7 +1,19 @@
-output HDMI-A-1 position 0 0
-output DP-4 position 1920 30
+output HDMI-A-1 position 0 250
+output DP-4 position 1920 0
 
 bar {
     output DP-4
+    position top
+
+    status_command i3status-rs ~/.config/i3status-rust/config
+
+    colors {
+	statusline #ffffff
+        background #323232
+        inactive_workspace #32323200 #32323200 #5c5c5c
+    }
 }
 
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous

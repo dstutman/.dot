@@ -8,7 +8,7 @@ background-color: #323232;
 margin: 5px;
 border: none;
 border-radius: 0;
-background-color: #44475a;
+background-color: #285577;
 }
 
 #inner-box {
@@ -35,5 +35,5 @@ border: none;
 } 
 
 #entry:selected {
-background-color: #44475a;
+background-color: #285577;
 }

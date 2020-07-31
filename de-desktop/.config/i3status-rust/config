@@ -16,6 +16,7 @@ block = "networkmanager"
 
 [[block]]
 block = "sound"
+show_volume_when_muted = true
 
 [[block]]
 block = "time"

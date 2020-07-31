@@ -7,8 +7,21 @@ output eDP-1 pos 0 0 res 1920x1080
 
 bar {
     output eDP-1
+    position top
+
+    status_command i3status-rs ~/.config/i3status-rust/config
+
+    colors {
+	statusline #ffffff
+        background #323232
+        inactive_workspace #32323200 #32323200 #5c5c5c
+    }
+}
+
+
+
+bar {
+    output eDP-1
 }
 
 bindsym XF86AudioMicMute exec amixer -q -D pulse set Capture toggle
-bindsym XF86MonBrightnessDown exec brightnessctl set -5%
-bindsym XF86MonBrightnessUp exec brightnessctl set +5%

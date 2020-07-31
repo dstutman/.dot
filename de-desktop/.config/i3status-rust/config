@@ -1,0 +1,21 @@
+[theme]
+name = "plain"
+[theme.overrides]
+separator = "/"
+separator_fg = "#000000"
+separator_bg = "#323232"
+idle_fg = "#ffffff"
+idle_bg = "#323232"
+info_fg = "#ffffff"
+info_bg = "#323232"
+good_bg = "#323232"
+warning_bg = "#323232"
+
+[[block]]
+block = "networkmanager"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "time"

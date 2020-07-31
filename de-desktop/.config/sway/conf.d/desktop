@@ -1,0 +1,7 @@
+output HDMI-A-1 position 0 0
+output DP-4 position 1920 30
+
+bar {
+    output DP-4
+}
+

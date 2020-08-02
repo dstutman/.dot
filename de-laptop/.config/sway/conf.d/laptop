@@ -5,6 +5,8 @@ input 1739:52550:SYNA307B:00_06CB:CD46_Touchpad {
 
 output eDP-1 pos 0 0 res 1920x1080
 
+workspace 1 output eDP-1
+
 bar {
     position top
 

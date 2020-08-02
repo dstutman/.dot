@@ -6,7 +6,6 @@ input 1739:52550:SYNA307B:00_06CB:CD46_Touchpad {
 output eDP-1 pos 0 0 res 1920x1080
 
 bar {
-    output eDP-1
     position top
 
     status_command i3status-rs ~/.config/i3status-rust/config

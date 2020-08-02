@@ -2,7 +2,6 @@ output HDMI-A-1 position 0 250
 output DP-4 position 1920 0
 
 bar {
-    output DP-4
     position top
 
     status_command i3status-rs ~/.config/i3status-rust/config

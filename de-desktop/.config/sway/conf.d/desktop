@@ -1,4 +1,4 @@
-output HDMI-A-1 position 0 250
+output HDMI-A-1 position 0 0
 output DP-4 position 1920 0
 
 workspace 1 output DP-4

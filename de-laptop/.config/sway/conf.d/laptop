@@ -19,10 +19,4 @@ bar {
     }
 }
 
-
-
-bar {
-    output eDP-1
-}
-
 bindsym XF86AudioMicMute exec amixer -q -D pulse set Capture toggle

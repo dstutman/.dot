@@ -6,11 +6,12 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin" ]]
 then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+    PATH="$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:$PATH"
 fi
 export PATH
 
+export EDITOR=nano
 # User specific aliases and functions
 alias ls='ls --color=auto -a'

@@ -13,6 +13,9 @@ fi
 export PATH
 export GTK_THEME=Adwaita:dark
 
-export EDITOR=nano
+# Setting vars
+export EDITOR=vim
+export QT_QPA_PLATFORM=wayland
+
 # User specific aliases and functions
 alias ls='ls --color=auto -a'

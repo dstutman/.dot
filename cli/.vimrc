@@ -32,6 +32,9 @@ augroup lsp_install
     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 
+" " Rust.vim
+let g:rustfmt_autosave = 1
+
 " Netrw
 let g:netrw_banner = 0
 let g:netrw_browse_split = 3

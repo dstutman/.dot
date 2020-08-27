@@ -8,14 +8,14 @@ fi
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin" ]]
 then
-    PATH="$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:$PATH"
+    export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:$PATH"
 fi
-export PATH
-export GTK_THEME=Adwaita:dark
 
 # Setting vars
 export EDITOR=vim
+export GTK_THEME=Adwaita:dark
 export QT_QPA_PLATFORM=wayland
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 # User specific aliases and functions
 alias ls='ls --color=auto -a'

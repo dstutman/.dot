@@ -1,5 +1,5 @@
-output DP-4 scale 1.5
-output DP-5 scale 1.5
+output DP-4 scale 1
+output DP-5 scale 1
 
 bar {
     position top

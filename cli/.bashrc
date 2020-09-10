@@ -12,7 +12,7 @@ then
 fi
 
 # Prompt
-export PS1='\[\e[0m\][\[\e[0m\]\h\[\e[m\] \[\e[0m\]\w\[\e[0m\]]\[\e[0;91m\]:\[\e[m\] \[\e0' 
+export PS1='\[\e[0;1m\][\[\e[0;1m\]\h\[\e[m\] \[\e[0;1m\]\w\[\e[0;1m\]]\[\e[0;91m\]:\[\e[m\] \[\e0'
 
 # Setting vars
 export EDITOR=vim

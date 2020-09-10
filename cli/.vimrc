@@ -7,6 +7,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mattn/vim-lsp-settings'
 Plug 'rust-lang/rust.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'ervandew/supertab'
 call plug#end()
 
 " Plugin configuration

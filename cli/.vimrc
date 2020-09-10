@@ -1,3 +1,6 @@
+" Colors
+colorscheme 256_noir
+
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'

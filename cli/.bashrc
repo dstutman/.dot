@@ -19,3 +19,4 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 # User specific aliases and functions
 alias ls='ls --color=auto -a'
+alias grep='rg'

@@ -6,13 +6,19 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'mattn/vim-lsp-settings'
 Plug 'rust-lang/rust.vim'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Plugin configuration
+" " GitGutter
+set updatetime=100
+set signcolumn=yes
+autocmd FileType netrw setlocal signcolumn=no
+
 " " LSP
+let g:lsp_diagnostics_echo_cursor = 1
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete
-    setlocal signcolumn=yes
     if exists('+tagfunc') | setlocal tagfunc=lsp#tagfunc | endif
     nmap <buffer> gd <plug>(lsp-definition)
     nmap <buffer> gr <plug>(lsp-references)

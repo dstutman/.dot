@@ -10,6 +10,7 @@ info_fg = "#ffffff"
 info_bg = "#323232"
 good_bg = "#323232"
 warning_bg = "#323232"
+critical_bg = "#323232"
 
 [[block]]
 block = "networkmanager"

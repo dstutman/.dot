@@ -1,9 +1,7 @@
-" Colors
-colorscheme 256_noir
-
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
@@ -12,6 +10,10 @@ Plug 'rust-lang/rust.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'ervandew/supertab'
 call plug#end()
+
+" Theming
+colorscheme 256_noir
+let g:airline_theme='minimalist'
 
 " Plugin configuration
 " " GitGutter

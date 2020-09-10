@@ -14,6 +14,7 @@ call plug#end()
 " Theming
 colorscheme 256_noir
 let g:airline_theme='minimalist'
+let g:airline_powerline_fonts = 1
 
 " Plugin configuration
 " " GitGutter

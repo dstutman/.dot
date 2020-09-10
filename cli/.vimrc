@@ -20,7 +20,7 @@ let g:airline_powerline_fonts = 1
 " " GitGutter
 set updatetime=100
 set signcolumn=yes
-autocmd FileType netrw setlocal signcolumn=no
+autocmd FileType netrw,gitcommit setlocal signcolumn=no
 
 " " LSP
 let g:lsp_diagnostics_echo_cursor = 1

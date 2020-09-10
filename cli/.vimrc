@@ -1,5 +1,6 @@
 " Plugins
 call plug#begin('~/.vim/plugged')
+Plug 'treycucco/vim-monotonic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'prabirshrestha/vim-lsp'
@@ -12,7 +13,7 @@ Plug 'ervandew/supertab'
 call plug#end()
 
 " Theming
-colorscheme 256_noir
+colorscheme monotonic-light
 let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 1
 
@@ -23,6 +24,7 @@ set signcolumn=yes
 autocmd FileType netrw,gitcommit setlocal signcolumn=no
 
 " " LSP
+let g:lsp_signs_enabled = 0
 let g:lsp_diagnostics_echo_cursor = 1
 function! s:on_lsp_buffer_enabled() abort
     setlocal omnifunc=lsp#complete

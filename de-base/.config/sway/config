@@ -201,7 +201,7 @@ bindsym XF86AudioLowerVolume exec amixer -q -D pulse set Master 5%-
 bindsym XF86AudioMute exec amixer -q -D pulse set Master toggle
 
 
-exec --no-startup-id mako --default-timeout 7000
+exec --no-startup-id mako --default-timeout 7000 --font "SourceCode Pro 14"
 exec --no-startup-id udiskie
 
 include ~/.config/sway/conf.d/*

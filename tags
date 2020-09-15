@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/b43eb398/
+#entry:selected	de-base/.config/wofi/style.css	/^#entry:selected {$/;"	i
+#inner-box	de-base/.config/wofi/style.css	/^#inner-box {$/;"	i
+#input	de-base/.config/wofi/style.css	/^#input {$/;"	i
+#outer-box	de-base/.config/wofi/style.css	/^#outer-box {$/;"	i
+#scroll	de-base/.config/wofi/style.css	/^#scroll {$/;"	i
+#text	de-base/.config/wofi/style.css	/^#text {$/;"	i
+<C-Down>	cli/.vimrc	/^nnoremap <silent> <C-Down> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>$/;"	m
+<C-H>	cli/.vimrc	/^nnoremap <C-H> <C-W><C-H>$/;"	m
+<C-J>	cli/.vimrc	/^nnoremap <C-J> <C-W><C-J>$/;"	m
+<C-K>	cli/.vimrc	/^nnoremap <C-K> <C-W><C-K>$/;"	m
+<C-L>	cli/.vimrc	/^nnoremap <C-L> <C-W><C-L>$/;"	m
+<C-Left>	cli/.vimrc	/^nnoremap <C-Left> :tabprevious<CR>$/;"	m
+<C-Right>	cli/.vimrc	/^nnoremap <C-Right> :tabnext <CR>$/;"	m
+<C-Up>	cli/.vimrc	/^nnoremap <silent> <C-Up> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>$/;"	m
+<C-t>	cli/.vimrc	/^nmap <C-t> :TagbarToggle<CR>$/;"	m
+ProjectDrawer	cli/.vimrc	/^augroup ProjectDrawer$/;"	a
+W	cli/.vimrc	/^command! W execute 'w !sudo tee % > \/dev\/null' <bar> edit!$/;"	c
+g:airline_powerline_fonts	cli/.vimrc	/^let g:airline_powerline_fonts = 1$/;"	v
+g:airline_theme	cli/.vimrc	/^let g:airline_theme='minimalist'$/;"	v
+g:netrw_banner	cli/.vimrc	/^let g:netrw_banner = 0$/;"	v
+g:netrw_browse_split	cli/.vimrc	/^let g:netrw_browse_split = 3$/;"	v
+g:rustfmt_autosave	cli/.vimrc	/^let g:rustfmt_autosave = 1$/;"	v
+window	de-base/.config/wofi/style.css	/^window {$/;"	s

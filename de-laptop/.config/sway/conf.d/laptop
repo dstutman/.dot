@@ -4,11 +4,18 @@ input 1739:52550:SYNA307B:00_06CB:CD46_Touchpad {
 }
 
 # Outputs depend on USB-C port
-output DP-1 transform 90 position 0 0
-output DP-3 transform 90 position 0 0
+#output DP-1 transform 90 position 0 0
+#output DP-3 transform 90 position 0 0
+output DP-1 position 0 1080
+output DP-3 position 0 1080
 
-output eDP-1 position 1440 1480
+#output eDP-1 position 1440 1480
+output eDP-1 position 320 0
 workspace 1 output eDP-1
+
+# Lid shut management
+bindswitch --reload --locked lid:on output eDP-1 disable
+bindswitch --reload --locked lid:off output eDP-1 enable
 
 bar {
     position top

@@ -30,5 +30,5 @@ bar {
 }
 
 bindsym XF86AudioMicMute exec amixer -q -D pulse set Capture toggle
-bindsym XF86MonBrightnessUp exec brightnessctl set +5%
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set +2%
+bindsym XF86MonBrightnessDown exec brightnessctl set 2%-

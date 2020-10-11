@@ -54,9 +54,6 @@ set number
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
-" Mouse in terminal
-set mouse=a
-
 set ignorecase
 set smartcase
 set hlsearch

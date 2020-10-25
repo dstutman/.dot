@@ -15,7 +15,7 @@ fi
 export PS1='\[\e[0;1m\][\[\e[0;1m\]\h\[\e[m\] \[\e[0;1m\]\w\[\e[0;1m\]]\[\e[0;91m\]:\[\e[m\] \[\e0'
 
 # Setting vars
-export EDITOR=vim
+export EDITOR=nano
 export GTK_THEME=Adwaita:dark
 export QT_QPA_PLATFORM=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1

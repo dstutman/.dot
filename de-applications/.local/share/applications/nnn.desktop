@@ -1,8 +1,8 @@
 [Desktop Entry]
 Version=1.0
 Name=nnn
-Comment=Test the terminal running a command inside it
-Exec=gnome-terminal -e "nnn"
+Comment=A terminal file browser running in Kitty
+Exec=kitty nnn
 Icon=utilities-terminal
 Terminal=false
 Type=Application

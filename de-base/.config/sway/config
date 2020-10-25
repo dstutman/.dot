@@ -39,12 +39,13 @@ font SourceCode Pro Semibold 16
 #
 # Example configuration:
 #
-exec swayidle -w \
-         timeout 300  'swaymsg "output * dpms off"' \
-              resume  'swaymsg "output * dpms on"' \
-         timeout 310  'swaylock -f -c 000000' \
-	 timeout 1800 'systemctl suspend' \
-         before-sleep 'swaylock -f -c 000000'
+#exec swayidle -w \
+#         timeout 300  'swaymsg "output * dpms off"' \
+#              resume  'swaymsg "output * dpms on"' \
+#         timeout 310  'swaylock -f -c 000000' \
+#	 timeout 1800 'systemctl suspend' \
+#         before-sleep 'swaylock -f -c 000000'
+
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when

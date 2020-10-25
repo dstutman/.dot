@@ -13,6 +13,14 @@ output DP-3 position 0 1080
 output eDP-1 position 320 0
 workspace 1 output eDP-1
 
+# Laptop idle conf
+exec swayidle -w \
+         timeout 300  'swaymsg "output * dpms off"' \
+              resume  'swaymsg "output * dpms on"' \
+         timeout 310  'swaylock -f -c 000000' \
+         timeout 1800 'systemctl suspend-then-hibernate' \
+         before-sleep 'swaylock -f -c 000000'
+
 # Lid shut management
 bindswitch --reload --locked lid:on output eDP-1 disable
 bindswitch --reload --locked lid:off output eDP-1 enable

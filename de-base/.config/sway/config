@@ -24,7 +24,7 @@ set $run_menu wofi --no-actions --show run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/default.png fill
+output * bg ~/.local/share/wallpapers/retro_sunrise.jpg fill
 #
 # Example configuration:
 #
@@ -207,8 +207,11 @@ exec --no-startup-id udiskie
 exec --no-startup-id gammastep
 
 # Mount remotes
-exec --no-startup-id sshfs dstutman@10.100.10.1:/aleph/Documents ~/Argon/Documents -o idmap=user
-exec --no-startup-id sshfs dstutman@10.100.10.1:/aleph/Photos ~/Argon/Photos -o idmap=user
+exec --no-startup-id sshfs dstutman@10.100.10.1:/aleph/Documents ~/Argon/Documents -o idmap=user,reconnect
+exec --no-startup-id sshfs dstutman@10.100.10.1:/aleph/Photos ~/Argon/Photos -o idmap=user,reconnect
+
+# Applications
+exec --no-startup-id spotifyd
 
 include ~/.config/sway/conf.d/*
 

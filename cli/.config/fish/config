@@ -5,4 +5,4 @@ set -gx GTK_THEME Adwaita:dark
 set -gx QT_GPA_PLATFORM wayland
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
 alias ls "ls --almost-all --classify --width=1"
-alias grep rg
+alias grep "rg"

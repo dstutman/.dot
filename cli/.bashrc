@@ -12,11 +12,11 @@ then
 fi
 
 # Setting vars
-export EDITOR=nano
+export EDITOR=vim
 export GTK_THEME=Adwaita:dark
 export QT_QPA_PLATFORM=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 # User specific aliases and functions
-alias ls='ls --almost-all --classify --width=1'
+alias ls='ls --almost-all --classify --color=auto'
 alias grep='rg'

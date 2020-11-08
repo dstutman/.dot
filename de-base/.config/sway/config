@@ -204,9 +204,13 @@ bindsym XF86AudioRaiseVolume exec amixer -q -D pulse set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -q -D pulse set Master 5%-
 bindsym XF86AudioMute exec amixer -q -D pulse set Master toggle
 
-
+# DE Utilities
 exec --no-startup-id mako --default-timeout 7000 --font "SourceCode Pro 14"
 exec --no-startup-id udiskie
+
+# Mounts
+exec --no-startup-id sshfs dstutman@10.100.10.1:/aleph/Documents ~/Argon/Documents -o idmap=user,reconnect
+exec --no-startup-id sshfs dstutman@10.100.10.1:/aleph/Photos ~/Argon/Photos -o idmap=user,reconnect
 
 # Applications
 exec --no-startup-id spotifyd

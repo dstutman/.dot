@@ -1,11 +1,27 @@
 " Disable legacy compat
 set nocompatible
 
-" Highlighting
+" Color and Highlighting
+let &t_ut=''
+set termguicolors
+
+" Time of day switching
+if strftime("%H") < 18
+  set background=light
+else
+  set background=dark
+endif
+colorscheme gruvbox
 syntax enable
+
+" Line numbers
+set relativenumber
 
 " Filetypes
 filetype plugin on
+
+" Keep swap files out of the way
+set directory^=$HOME/.cache/vim//
 
 " Files
 "" NetRW

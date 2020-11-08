@@ -121,6 +121,9 @@ for_window [app_id="firefox"] inhibit_idle fullscreen
 #
 # Workspaces:
 #
+
+    # Tabbed by default 
+    workspace_layout tabbed
     # Switch to workspace
     bindsym $mod+1 workspace 1
     bindsym $mod+2 workspace 2
@@ -204,10 +207,6 @@ bindsym XF86AudioMute exec amixer -q -D pulse set Master toggle
 
 exec --no-startup-id mako --default-timeout 7000 --font "SourceCode Pro 14"
 exec --no-startup-id udiskie
-
-# Mount remotes
-exec --no-startup-id sshfs dstutman@10.100.10.1:/aleph/Documents ~/Argon/Documents -o idmap=user,reconnect
-exec --no-startup-id sshfs dstutman@10.100.10.1:/aleph/Photos ~/Argon/Photos -o idmap=user,reconnect
 
 # Applications
 exec --no-startup-id spotifyd

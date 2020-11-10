@@ -15,7 +15,7 @@ colorscheme gruvbox
 syntax enable
 
 " Line numbers
-set relativenumber
+set number
 
 " Filetypes
 filetype plugin on
@@ -52,3 +52,6 @@ function! InsertTabWrapper()
 endfunction
 inoremap <expr> <tab> InsertTabWrapper()
 inoremap <s-tab> <c-n>
+
+" Clear search
+nnoremap <esc> :noh<return><esc>

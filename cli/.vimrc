@@ -11,7 +11,7 @@ if strftime("%H") < 18
 else
   set background=dark
 endif
-colorscheme gruvbox
+colorscheme solarized
 syntax enable
 
 " Line numbers

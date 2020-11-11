@@ -54,4 +54,5 @@ inoremap <expr> <tab> InsertTabWrapper()
 inoremap <s-tab> <c-n>
 
 " Clear search
-nnoremap <esc> :noh<return><esc>
+nnoremap <leader><space> :noh<cr>
+

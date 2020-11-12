@@ -55,4 +55,3 @@ inoremap <s-tab> <c-n>
 
 " Clear search
 nnoremap <leader><space> :noh<cr>
-

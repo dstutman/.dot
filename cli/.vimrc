@@ -4,10 +4,6 @@ set nocompatible
 " Color and Highlighting
 syntax enable
 let &t_ut=''
-set termguicolors
-let g:solarized_visibility="high"
-let g:solarized_contrast="high"
-colorscheme solarized
 
 " Line numbers
 set number
@@ -37,16 +33,29 @@ set wildignore+=**/.cargo/**
 set wildignore+=**/target/**
 
 " Tab completion
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<tab>"
-    else
-        return "\<c-p>"
-    endif
-endfunction
-inoremap <expr> <tab> InsertTabWrapper()
-inoremap <s-tab> <c-n>
+
+"function! InsertTabWrapper()
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <silent><expr> <S-Tab> 
+      \ pumvisible() ? "\<C-p>" : "\<S-TAB>"
+"    let col = col('.') - 1
+"    if !col || getline('.')[col - 1] !~ '\k'
+"        return "\<tab>"
+"    else
+"        return "\<c-p>"
+"    endif
+"endfunction
+"inoremap <expr> <tab> InsertTabWrapper()
+"inoremap <s-tab> <c-n>
 
 " Clear search
 nnoremap <leader><space> :noh<cr>
+
+" ALE
+let g:ale_enabled = 1
+let g:ale_completion_enabled = 1
+let g:ale_completion_autoimport = 1
+set omnifunc=ale#completion#OmniFunc
+let g:ale_set_balloons=1
+let g:ale_linters = {'rust': ['cargo', 'analyzer']}

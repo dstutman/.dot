@@ -24,7 +24,7 @@ set $run_menu wofi --no-actions --insensitive --show run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/.local/share/wallpapers/retro_sunrise.jpg fill
+#output * bg ~/.local/share/wallpapers/retro_sunrise.jpg fill
 #
 # Example configuration:
 #
@@ -123,7 +123,7 @@ for_window [app_id="firefox"] inhibit_idle fullscreen
 #
 
     # Tabbed by default 
-    workspace_layout tabbed
+    # workspace_layout tabbed
     # Switch to workspace
     bindsym $mod+1 workspace 1
     bindsym $mod+2 workspace 2

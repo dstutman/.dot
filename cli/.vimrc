@@ -2,17 +2,12 @@
 set nocompatible
 
 " Color and Highlighting
+syntax enable
 let &t_ut=''
 set termguicolors
-
-" Time of day switching
-if strftime("%H") < 18
-  set background=light
-else
-  set background=dark
-endif
+let g:solarized_visibility="high"
+let g:solarized_contrast="high"
 colorscheme solarized
-syntax enable
 
 " Line numbers
 set number

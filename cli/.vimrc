@@ -5,6 +5,9 @@ set nocompatible
 syntax enable
 let &t_ut=''
 
+" Show whitespace
+set listchars=tab:⇤–⇥,space:·,trail:·,precedes:⇠,extends:⇢,nbsp:× 
+
 " Line numbers
 set number
 
@@ -23,6 +26,9 @@ augroup ProjectDrawer
     autocmd VimEnter * if argc() == 0 | Explore! | endif
 augroup END
 
+"" Autoload changes
+set autoread
+
 "" Path
 set path=.,**
 set wildmenu
@@ -33,12 +39,11 @@ set wildignore+=**/.cargo/**
 set wildignore+=**/target/**
 
 " Tab completion
-
-"function! InsertTabWrapper()
 inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <silent><expr> <S-Tab> 
       \ pumvisible() ? "\<C-p>" : "\<S-TAB>"
+"function! InsertTabWrapper()
 "    let col = col('.') - 1
 "    if !col || getline('.')[col - 1] !~ '\k'
 "        return "\<tab>"
@@ -48,6 +53,10 @@ inoremap <silent><expr> <S-Tab>
 "endfunction
 "inoremap <expr> <tab> InsertTabWrapper()
 "inoremap <s-tab> <c-n>
+
+
+" Search without enter
+set incsearch
 
 " Clear search
 nnoremap <leader><space> :noh<cr>

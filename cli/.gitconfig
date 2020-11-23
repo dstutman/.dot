@@ -1,3 +1,5 @@
 [user]
 	name = dstutman
 	email = git@stutman.tech
+[pull]
+	rebase = false

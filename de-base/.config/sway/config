@@ -79,9 +79,9 @@ for_window [app_id="firefox"] inhibit_idle fullscreen
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $desktop_menu
-    bindsym $mod+Shift+d exec $run_menu
-
+    bindsym Super_L exec $desktop_menu
+    bindsym Super_L+Shift exec $run_menu
+    
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.

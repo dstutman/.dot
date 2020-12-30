@@ -3,7 +3,8 @@ set nocompatible
 
 " Color and Highlighting
 syntax enable
-let &t_ut=''
+let &t_ut=""
+colorscheme solarized
 
 " Show whitespace
 set listchars=tab:⇤–⇥,space:·,trail:·,precedes:⇠,extends:⇢,nbsp:× 
@@ -15,7 +16,7 @@ set number
 filetype plugin on
 
 " Keep swap files out of the way
-set directory^=$HOME/.cache/vim//
+set directory^=$HOME/.cache/vim/
 
 " Files
 "" NetRW
@@ -60,11 +61,3 @@ set incsearch
 
 " Clear search
 nnoremap <leader><space> :noh<cr>
-
-" ALE
-let g:ale_enabled = 1
-let g:ale_completion_enabled = 1
-let g:ale_completion_autoimport = 1
-set omnifunc=ale#completion#OmniFunc
-let g:ale_set_balloons=1
-let g:ale_linters = {'rust': ['cargo', 'analyzer']}

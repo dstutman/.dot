@@ -4,7 +4,6 @@ set nocompatible
 " Color and Highlighting
 syntax enable
 let &t_ut=""
-colorscheme solarized
 
 " Show whitespace
 set listchars=tab:⇤–⇥,space:·,trail:·,precedes:⇠,extends:⇢,nbsp:× 

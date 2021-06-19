@@ -1,0 +1,32 @@
+input 2:7:SynPS/2_Synaptics_TouchPad {
+        tap enabled
+        tap_button_map lrm
+}
+
+# Laptop idle conf
+exec swayidle -w \
+         timeout 300  'swaymsg "output * dpms off"' \
+              resume  'swaymsg "output * dpms on"' \
+         timeout 310  'swaylock -f -c 000000' \
+         timeout 1800 'systemctl suspend' \
+         before-sleep 'swaylock -f -c 000000'
+
+# Lid shut management
+bindswitch --reload --locked lid:on output eDP-1 disable
+bindswitch --reload --locked lid:off output eDP-1 enable
+
+bar {
+    position top
+
+    status_command i3status-rs ~/.config/i3status-rust/config
+
+    colors {
+	statusline #ffffff
+        background #222222
+        inactive_workspace #32323200 #32323200 #5c5c5c
+    }
+}
+
+bindsym XF86AudioMicMute exec amixer -q -D pulse set Capture toggle
+bindsym XF86MonBrightnessUp exec brightnessctl set +2%
+bindsym XF86MonBrightnessDown exec brightnessctl set 2%-

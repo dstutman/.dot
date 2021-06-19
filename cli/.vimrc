@@ -60,3 +60,7 @@ set incsearch
 
 " Clear search
 nnoremap <leader><space> :noh<cr>
+
+" Spaces
+set expandtab
+set tabstop=4

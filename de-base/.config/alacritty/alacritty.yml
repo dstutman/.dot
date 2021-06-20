@@ -1,4 +1,3 @@
-
 font:
     normal:
         family: SourceCode Pro
@@ -16,4 +15,4 @@ font:
         family: SourceCode Pro
         style: Bold Italic
 
-    size: 14
+    size: 12

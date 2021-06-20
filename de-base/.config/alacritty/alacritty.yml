@@ -1,0 +1,19 @@
+
+font:
+    normal:
+        family: SourceCode Pro
+        style: Regular
+
+    bold:
+        family: SourceCode Pro
+        style: Bold
+
+    italic:
+        family: SourceCode Pro
+        style: Italic
+
+    bold_italic:
+        family: SourceCode Pro
+        style: Bold Italic
+
+    size: 14
